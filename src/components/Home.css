@@ -1,0 +1,45 @@
+/* Home component specific styles */
+.profile-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-parent {
+    padding: 20px;
+  }
+  
+  .profile-details {
+    margin-top: 20px;
+  }
+  
+  .colz-icon i {
+    font-size: 1.5em;
+  }
+  
+  .profile-details-name .primary-text {
+    color: white;
+  }
+  
+  .profile-details-role h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .profile-role-tagline {
+    color: #cccccc;
+  }
+  
+  .profile-options button {
+    padding: 10px 20px;
+  }
+  
+  .profile-picture-background {
+    background-color: #cccccc;
+  }
+  
+  /* Custom Typewriter effect styles */
+  .typewriter {
+    font-family: "Courier New", monospace;
+    font-size: 24px;
+    color: #fff;
+  }
+  
