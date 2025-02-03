@@ -1,85 +1,43 @@
-import React, { useEffect } from "react";
-import { useTypewriter } from "react-simple-typewriter";
+import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import profilePic from "../assets/profile.jpg"; // Update path if needed
 
 const Home = () => {
-  const { text, count } = useTypewriter({
-    words: [
-      "Software Engineer",
-      "Full Stack Developer",
-      "MERN Stack Developer",
-      "PHP Developer",
-      "JavaScript Developer",
-      "Backend Developer",
-    ],
-    loop: true,
-    delaySpeed: 2000,
-  });
-
-  useEffect(() => {
-    // Log the typewriter text and count to ensure it's being updated
-    console.log("Typewriter text:", text);
-    console.log("Typewriter count:", count);
-  }, [text, count]);  // Add the dependencies to log on each update
-
   return (
-    <div id="profile" className="profile-container">
-      <div className="profile-parent flex flex-col md:flex-row items-center justify-between min-h-screen bg-gray-800 px-6 md:px-16">
-        {/* Profile Details and Typewriter Effect */}
-        <div className="profile-details text-center md:text-left text-white flex-1">
-          {/* Social Links */}
-          <div className="colz flex justify-center md:justify-start space-x-6 mb-6">
-            <div className="colz-icon text-3xl">
-              <a href="https://www.linkedin.com/in/eric-mugendi-njoka/" className="text-blue-600 hover:text-blue-400">
-                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-              </a>
-              <a href="mailto:mugendieric13@gmail.com" className="text-red-600 hover:text-red-400 mx-4">
-                <i className="fa fa-google-plus-square" aria-hidden="true"></i>
-              </a>
-              <a href="https://github.com/eriehastel" className="text-gray-900 hover:text-gray-600">
-                <i className="fa fa-github-square" aria-hidden="true"></i>
-              </a>
-              <a href="tel:+254703668825" className="text-green-600 hover:text-green-400 mx-4">
-                <i className="fa fa-phone-square" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-
-          {/* Introduction */}
-          <div className="profile-details-name mb-4">
-            <span className="primary-text text-3xl font-bold">
-              Hello, I'M <span className="highlighted-text text-yellow-500">Eric</span>
-            </span>
-          </div>
-
-          {/* Typewriting Effect */}
-          <div className="profile-details-role mb-6">
-            <h1 className="text-4xl font-semibold">
-              <span>{text}</span>
-            </h1>
-            <span className="profile-role-tagline text-lg text-gray-400">
-              Knack of building applications with front and back end operations.
-            </span>
-          </div>
-
+    <section className="relative w-full h-screen bg-gray-900 text-white flex items-center justify-center">
+          
+      {/* Hero Section */}
+      <div className="flex flex-col md:flex-row items-center gap-10 px-10">
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl font-semibold">Hello, I'M <span className="text-orange-500">Eric</span></h2>
+          <h1 className="text-4xl font-bold mt-2">
+            <Typewriter
+              words={["A Web Developer", "A Software Engineer", "A Tech Enthusiast"]}
+              loop={true}
+              cursor
+              cursorStyle="_"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h1>
+          <p className="mt-4 text-gray-300">
+            Knack of building applications with front and back-end operations.
+          </p>
+          
           {/* Buttons */}
-          <div className="profile-options flex justify-center md:justify-start space-x-4">
-            <button className="btn primary-btn px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full transition">
-              Hire Me
-            </button>
-            <a href="ERIC.pdf" download="CV ERIC.pdf">
-              <button className="btn highlighted-btn px-6 py-3 bg-blue-500 hover:bg-blue-400 text-white rounded-full transition">
-                Get Resume
-              </button>
-            </a>
+          <div className="mt-6 flex gap-4">
+            <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black">Hire Me</button>
+            <button className="bg-orange-500 px-6 py-2 rounded-full text-white shadow-lg hover:bg-orange-600">Get Resume</button>
           </div>
         </div>
 
         {/* Profile Picture */}
-        <div className="profile-picture mt-8 md:mt-0 relative w-40 h-40 md:w-60 md:h-60">
-          <div className="profile-picture-background bg-gray-500 rounded-full shadow-lg absolute top-0 left-0 w-full h-full"></div>
+        <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-gray-300">
+          <img src={profilePic} alt="Eric" className="w-full h-full object-cover" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
