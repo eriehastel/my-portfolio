@@ -1,4 +1,5 @@
 import React from "react";
+import profileImage from "../assets/profile.png";
 
 const About = () => {
   return (
@@ -45,7 +46,9 @@ const About = () => {
         </div>
         {/* Image Section */}
         <div className="flex justify-center mt-8">
-          <img src="/assets/profile.jpg" alt="Profile" className="w-48 h-48 rounded-full shadow-lg border-4 border-blue-400" />
+          <img src={profileImage}
+          alt="Profile" 
+          className="w-48 h-48 rounded-full shadow-lg border-4 border-blue-400" />
         </div>
       </div>
     </section>
