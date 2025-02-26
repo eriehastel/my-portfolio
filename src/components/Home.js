@@ -34,7 +34,7 @@ const testimonials = [
 
 
 
-const Home = () => {
+const Home = ({isOpen}) => {
   const [activeTab, setActiveTab] = useState("All");
   const [hoveredProject, setHoveredProject] = useState(null);
   const [showAll, setShowAll] = useState(false);
@@ -81,7 +81,7 @@ const Home = () => {
   
 
   return (
-    <div id="container" className="container mx-auto">
+    <div id="container" className="container mx-auto" style={{ paddingTop: isOpen ? "17.5rem" : "5rem" }}>
 
               <div id="profile" className="profile-container min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-200/80 to-purple-200/80 py-16 px-8 md:px-24 lg:px-48">
                         

@@ -1,9 +1,10 @@
 import React from "react";
 import profileImage from "../assets/profile.png";
 
-const About = () => {
+const About = ({isOpen}) => {
   return (
-    <section className="bg-gradient-to-r from-blue-200 to-purple-200 py-12 px-6 md:px-20 lg:px-40">
+    <div className="container mx-auto transition-all duration-300" style={{ paddingTop: isOpen ? "17.5rem" : "5rem" }}>
+    <section className="bg-gradient-to-r from-blue-200 to-purple-200 py-12 px-6 md:px-20 lg:px-40" >
       <div className="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-md flex flex-col items-center">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">About Me</h2>
         <div className="grid md:grid-cols-2 gap-8 w-full">
@@ -52,6 +53,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

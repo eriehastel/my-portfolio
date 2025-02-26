@@ -1,26 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <div className="flex-grow">
+    <>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home isOpen={isOpen} />} />
+          <Route path="/about" element={<About isOpen={isOpen} />} />
+          <Route path="/projects" element={<Projects isOpen={isOpen} />} />
+          <Route path="/contact" element={<Contact isOpen={isOpen} />} />
         </Routes>
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
 
