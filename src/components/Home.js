@@ -27,9 +27,9 @@ const projects = [
 ];
 
 const testimonials = [
-  { name: "Terryann ", text: "Eric is an outstanding developer! His work is top-notch.", image: "/john.jpg" },
-  { name: "Zac", text: "Highly skilled and professional. I highly recommend!", image: "/jane.jpg" },
-  { name: "Wachira", text: "Fantastic experience working with Eric. 10/10!", image: "/mark.jpg" },
+  { name: "Kelvin ", text: "Eric is an outstanding developer! His work is top-notch.", image: "/kelvin.jpeg" },
+  { name: "Muchina", text: "Highly skilled and professional. I highly recommend!", image: "/muchina.jpeg" },
+  { name: "Zac", text: "Fantastic experience working with Eric. 10/10!", image: "/zac.jpeg" },
 ];
 
 
