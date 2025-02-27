@@ -12,7 +12,7 @@ function Footer() {
       {/* Social Media Links */}
       <div className="flex justify-center space-x-6 mb-4">
         <a
-          href="https://github.com/yourgithub"
+          href="https://github.com/eriehastel"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-600 transition-transform transform hover:scale-110"
@@ -20,7 +20,7 @@ function Footer() {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://linkedin.com/in/yourlinkedin"
+          href="https://linkedin.com/in/eric-mugendi-njoka"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-600 transition-transform transform hover:scale-110"
@@ -28,7 +28,7 @@ function Footer() {
           <FaLinkedin size={24} />
         </a>
         <a
-          href="https://twitter.com/yourtwitter"
+          href="https://twitter.com/eriehastel"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-600 transition-transform transform hover:scale-110"
