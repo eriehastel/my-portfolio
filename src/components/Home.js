@@ -14,6 +14,9 @@ import houseFurnitureImage from "../assets/housefurniture.png";
 import healHouseImage from "../assets/healhouse.png";
 import stVeronicaImage from "../assets/stveronica.png";
 import hhHospitalImage from "../assets/hhhospital.jpg";
+import kelvinImage from "../assets/kelvin.jfif";
+import muchinaImage from "../assets/muchina.jfif";
+import zacImage from "../assets/zac.jfif";
 
 const projects = [
   { title: "Alpha Pro Writers", category: "PHP", link: "https://alphaprowriters.com", image: logoImage, description: "Freelance writing platform built with PHP, JavaScript, AJAX, and MySQL." },
@@ -27,9 +30,9 @@ const projects = [
 ];
 
 const testimonials = [
-  { name: "Kelvin ", text: "Eric is an outstanding developer! His work is top-notch.", image: "/kelvin.jpeg" },
-  { name: "Muchina", text: "Highly skilled and professional. I highly recommend!", image: "/muchina.jpeg" },
-  { name: "Zac", text: "Fantastic experience working with Eric. 10/10!", image: "/zac.jpeg" },
+  { name: "Kelvin ", text: "Eric is an outstanding developer! His work is top-notch.", image: kelvinImage },
+  { name: "Muchina", text: "Highly skilled and professional. I highly recommend!", image: muchinaImage },
+  { name: "Zac", text: "Fantastic experience working with Eric. 10/10!", image: zacImage },
 ];
 
 
