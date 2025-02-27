@@ -22,12 +22,15 @@ const projects = [
   { title: "HH Hospital", category: "JS", link: "https://hhhospital.netlify.app", image: hhHospitalImage, description: "Hospital website built using templates and JavaScript." },
 ];
 
-function Projects({isOpen}) {
+function Projects({ isOpen }) {
   const [activeTab, setActiveTab] = useState("All");
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <div className="p-10" style={{ paddingTop: isOpen ? "17.5rem" : "5rem" }}>
+    <div 
+      className="p-10 bg-gray-100 dark:bg-gray-900 dark:text-gray-300 transition-all duration-300" 
+      style={{ paddingTop: isOpen ? "17.5rem" : "5rem" }}
+    >
       {/* Section Header */}
       <motion.div 
         className="text-center mt-10"
@@ -35,8 +38,12 @@ function Projects({isOpen}) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl font-extrabold text-blue-700">Recent Works</h2>
-        <p className="text-gray-600 text-lg mt-2">Showcasing some of my best projects</p>
+        <h2 className="text-4xl font-extrabold text-blue-700 dark:text-yellow-500 dark:shadow-md dark:shadow-yellow-600">
+          Recent Works
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 text-lg mt-2">
+          Showcasing some of my best projects
+        </p>
       </motion.div>
 
       {/* Filter Tabs */}
@@ -46,7 +53,9 @@ function Projects({isOpen}) {
             key={index}
             onClick={() => setActiveTab(tab)}
             className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 shadow-md ${
-              activeTab === tab ? "bg-blue-700 text-white" : "bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white"
+              activeTab === tab 
+                ? "bg-blue-700 text-white dark:bg-yellow-500 dark:text-gray-900"
+                : "bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-blue-500 dark:hover:bg-yellow-600 hover:text-white"
             }`}
             whileHover={{ scale: 1.05 }}
           >
@@ -68,24 +77,27 @@ function Projects({isOpen}) {
           .map((project, index) => (
             <motion.div
               key={index}
-              className="relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:border-blue-500 transition transform hover:-translate-y-1 cursor-pointer overflow-hidden"
+              className="relative bg-white dark:bg-gray-800 dark:text-gray-300 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:border-blue-500 dark:hover:border-yellow-500 transition transform hover:-translate-y-1 cursor-pointer overflow-hidden"
               whileHover={{ scale: 1.02 }}
             >
               <img 
                 src={project.image} 
                 alt={project.title} 
                 className="h-40 w-full object-contain rounded-lg"
+                loading="lazy"
               />
 
-              <h3 className="text-lg font-bold text-gray-800 mt-3">
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <h3 className="text-lg font-bold text-gray-800 dark:text-yellow-500 dark:shadow-md dark:shadow-yellow-600 mt-3">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
                   {project.title}
                 </a>
               </h3>
-              <p className="text-gray-600 text-sm mt-1">{project.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">{project.description}</p>
+
               {/* Overlay Effect */}
               <motion.div 
-                className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center text-white font-bold text-lg opacity-0 transition-all duration-300 hover:opacity-100 hover:bg-opacity-50"
+                className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center text-white font-bold text-lg transition-all duration-300"
+                whileHover={{ opacity: 1, backgroundColor: "rgba(0, 0, 0, 0.5)" }}
               >
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
                   View Project
@@ -99,7 +111,7 @@ function Projects({isOpen}) {
       <div className="text-center mt-6">
         <motion.button 
           onClick={() => setShowAll(!showAll)} 
-          className="px-6 py-2 bg-blue-700 text-white rounded-md font-semibold transition hover:bg-blue-800"
+          className="px-6 py-2 bg-blue-700 text-white dark:bg-yellow-500 dark:text-gray-900 rounded-md font-semibold transition hover:bg-blue-800 dark:hover:bg-yellow-600"
           whileHover={{ scale: 1.05 }}
         >
           {showAll ? "Show Less" : "Show More"}

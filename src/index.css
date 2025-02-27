@@ -1,0 +1,6 @@
+.dark #profile,
+.dark #expertise,
+.dark #offer,
+.dark #testimonials {
+    background: #2a2d3a !important; /* Dark gray with a slight blue tint */
+}
