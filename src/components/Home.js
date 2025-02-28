@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaUser, FaPhone, FaEnvelope, FaBriefcase, FaProjectDiagram, FaHeadset, FaCode, FaVolleyballBall, FaFilm, FaGlobe, FaLaptopCode, FaGraduationCap  } from "react-icons/fa";
-import ProfileImg from "../assets/profile.png";
+import ProfileImg from "../assets/profilephoto.jpeg";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
