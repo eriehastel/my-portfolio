@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../assets/profile.png";
+import profileImage from "../assets/profilephoto.jpeg";
 
 const About = ({ isOpen }) => {
   return (
