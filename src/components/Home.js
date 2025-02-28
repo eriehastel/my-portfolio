@@ -130,6 +130,7 @@ const Home = ({isOpen}) => {
                     src={ProfileImg} 
                     alt="Profile" 
                     className="w-full h-full rounded-full shadow-xl border-4 border-blue-600 dark:border-blue-400 bg-gray-500 dark:bg-gray-700"
+                    style={{ objectFit: "cover", height: "100%", width: "100%" }}
                   />
                 </div>
               </div>
