@@ -19,7 +19,7 @@ import muchinaImage from "../assets/muchina.jfif";
 import zacImage from "../assets/zac.jfif";
 
 const projects = [
-  { title: "Alpha Pro Writers", category: "PHP", link: "https://alphaprowriters.com", image: logoImage, description: "Freelance writing platform built with PHP, JavaScript, AJAX, and MySQL." },
+  { title: "Alpha Pro Writers", category: "PHP", link: "https://alphaprowriter.com", image: logoImage, description: "Freelance writing platform built with PHP, JavaScript, AJAX, and MySQL." },
   { title: "ValdaTech Computers", category: "WordPress", link: "https://valdatechcomputers.co.ke", image: valdaTechImage, description: "IT solutions and computer sales website built with WordPress." },
   { title: "Eric Mugendi Portfolio", category: "React JS", link: "https://eric-mugendi.netlify.app", image: portfolioImage, description: "Personal developer portfolio built with React.js and Tailwind CSS." },
   { title: "ValdaTech Hub", category: "WordPress", link: "https://valdatechhub.netlify.app", image: valdaTechHubImage, description: "Tech hub website showcasing services and innovations." },
