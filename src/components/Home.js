@@ -109,7 +109,7 @@ const Home = ({isOpen}) => {
                   <div className="profile-details-role">
                     <h1 className="text-5xl font-bold">
                       <Typewriter
-                        words={["Software Engineer", "Full Stack Developer", "MERN Stack Developer", "PHP Developer", "JavaScript Developer", "Backend Developer"]}
+                        words={["Full Stack Developer", "MERN Stack Developer", "PHP Developer", "JavaScript Developer", "Backend Developer", "Software Engineer", "Responsive Designs"]}
                         loop={true}
                         cursor
                         cursorStyle="|"
