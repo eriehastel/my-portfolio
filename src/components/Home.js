@@ -9,7 +9,7 @@ import emailjs from "@emailjs/browser";
 import logoImage from "../assets/logo.jpeg";
 import valdaTechImage from "../assets/valdatechcomputers.png";
 import portfolioImage from "../assets/portfolio.png";
-import valdaTechHubImage from "../assets/valdatechhub.png";
+import valdaTechHubImage from "../assets/log.png";
 import houseFurnitureImage from "../assets/housefurniture.png";
 import healHouseImage from "../assets/healhouse.png";
 import stVeronicaImage from "../assets/stveronica.png";
@@ -22,7 +22,7 @@ const projects = [
   { title: "Alpha Pro Writers", category: "PHP", link: "https://alphaprowriter.com", image: logoImage, description: "Freelance writing platform built with PHP, JavaScript, AJAX, and MySQL." },
   { title: "ValdaTech Computers", category: "WordPress", link: "https://valdatechcomputers.co.ke", image: valdaTechImage, description: "IT solutions and computer sales website built with WordPress." },
   { title: "Eric Mugendi Portfolio", category: "React JS", link: "https://eric-mugendi.netlify.app", image: portfolioImage, description: "Personal developer portfolio built with React.js and Tailwind CSS." },
-  { title: "ValdaTech Hub", category: "WordPress", link: "https://valdatechhub.netlify.app", image: valdaTechHubImage, description: "Tech hub website showcasing services and innovations." },
+  { title: "Zercktech Solutions", category: "JS", link: "https://zercktechsolutions.co.ke/", image: valdaTechHubImage, description: "Tech hub website showcasing services and innovations." },
   { title: "House Furniture", category: "JS", link: "https://housefurniture.netlify.app", image: houseFurnitureImage, description: "Furniture e-commerce platform built with JavaScript and PHP." },
   { title: "Heal House Therapy", category: "WordPress", link: "https://healhousetherapy.com", image: healHouseImage, description: "Health and therapy service website built with WordPress." },
   { title: "St. Veronica Medicare", category: "WordPress", link: "https://stveronicamedicare.org", image: stVeronicaImage, description: "Medical center website developed using WordPress." },
