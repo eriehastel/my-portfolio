@@ -12,9 +12,11 @@ import stVeronicaImage from "../assets/stveronica.png";
 import hhHospitalImage from "../assets/hhhospital.jpg";
 
 const projects = [
-  { title: "zercktech Solutions ", category: "JS", link: "https://zercktechsolutions.co.ke/", image: valdaTechHubImage, description: "Tech hub website showcasing services and innovations." },{ title: "Alpha Pro Writers", category: "PHP", link: "https://alphaprowriter.com", image: logoImage, description: "Freelance writing platform built with PHP, JavaScript, AJAX, and MySQL." },
-  { title: "ValdaTech Computers", category: "WordPress", link: "https://valdatechcomputers.co.ke", image: valdaTechImage, description: "IT solutions and computer sales website built with WordPress." },
+  { title: "zercktech Solutions ", category: "JS", link: "https://zercktechsolutions.co.ke/", image: valdaTechHubImage, description: "Tech hub website showcasing services and innovations." },
   { title: "Eric Mugendi Portfolio", category: "React JS", link: "https://eric-mugendi.netlify.app", image: portfolioImage, description: "Personal developer portfolio built with React.js and Tailwind CSS." },
+  { title: "Alpha Pro Writers", category: "PHP", link: "https://alphaprowriter.com", image: logoImage, description: "Freelance writing platform built with PHP, JavaScript, AJAX, and MySQL." },
+  { title: "ValdaTech Computers", category: "WordPress", link: "https://valdatechcomputers.co.ke", image: valdaTechImage, description: "IT solutions and computer sales website built with WordPress." },
+  
   { title: "House Furniture", category: "JS", link: "https://housefurniture.netlify.app", image: houseFurnitureImage, description: "Furniture e-commerce platform built with JavaScript and PHP." },
   { title: "Heal House Therapy", category: "WordPress", link: "https://healhousetherapy.com", image: healHouseImage, description: "Health and therapy service website built with WordPress." },
   { title: "St. Veronica Medicare", category: "WordPress", link: "https://stveronicamedicare.org", image: stVeronicaImage, description: "Medical center website developed using WordPress." },
