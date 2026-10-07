@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import logoImage from "../assets/logo.jpeg";
 import valdaTechImage from "../assets/valdatechcomputers.png";
 import portfolioImage from "../assets/portfolio.png";
-import valdaTechHubImage from "../assets/valdatechhub.png";
+import valdaTechHubImage from "../assets/log.png";
 import houseFurnitureImage from "../assets/housefurniture.png";
 import healHouseImage from "../assets/healhouse.png";
 import stVeronicaImage from "../assets/stveronica.png";
